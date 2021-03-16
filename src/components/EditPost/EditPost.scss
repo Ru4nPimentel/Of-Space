@@ -1,0 +1,43 @@
+@keyframes loadEdit {
+  from {
+    opacity: 0;
+    top: 15px;
+  }
+  to {
+    opacity: 1;
+    top: 15px;
+  }
+}
+
+
+.EditPost{
+  width: 100%;
+  height: 40px;
+  background: var(--color-white);
+  border: 1px solid var(--color-dark-grey);
+  border-radius: 10px;
+  display: flex;
+  animation: loadEdit 1s forwards;
+  overflow: hidden;
+  margin-bottom: 20px;
+  input{
+    width: 80%;
+    height: 38px;
+    border: none;
+    background: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+  }
+  button{
+    margin-left: 5px;
+    background: var(--color-purple);
+    width: calc(20% - 5px);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-white);
+  }
+}
