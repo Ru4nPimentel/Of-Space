@@ -1,0 +1,35 @@
+.Posts{
+  width: 648px;
+  margin: 40px auto 0;
+  height: auto;
+  .posts_box{
+    position: relative;
+    min-height: 400px;
+  }
+  .post_btn{
+    display: flex;
+    justify-content: center;
+    .btn_plusPost{
+      font-size: 60px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      margin-top: 25px;
+      transition: ease 0.3s;
+      svg{
+        transition: ease 0.3s;
+        color: var( --color-black);
+        &:hover{
+          transform: rotate(90deg);
+          color: var(--color-purple);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Posts{
+    width: 100%;
+  }
+}

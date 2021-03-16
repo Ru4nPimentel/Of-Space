@@ -1,0 +1,73 @@
+@keyframes loadCard {
+  from {
+    opacity: 0;
+    top: 35px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+.cardPost{
+  background-color: var(--color-grey);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  position: relative;
+  opacity: 0;
+  animation: loadCard 1s forwards;
+  .cardPost_content{
+    .author{
+      text-align: left;
+      display: flex;
+      font-size: 20px;
+      align-items: center;
+      padding-bottom: 10px;
+      color: var(--color-purple);
+      border-bottom: 1px solid var(--color-black);
+      margin-bottom: 15px;
+      svg{
+        font-size: 30px;
+        margin-right: 5px;
+      }
+    }
+    h2{
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--color-black);
+    }
+    p{
+      font-size: 14px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--color-dark-grey);
+      margin-bottom: 15px;
+    }
+  }
+  .cardPost_btnComment{
+    font-family: Montserrat, sans-serif;
+    border: none;
+    font-size: 16px;
+    display: block;
+    padding: 14px 15px 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background: transparent;
+    transition: ease 0.3s;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--color-black);
+    display: flex;
+    svg{
+      font-size: 23px;
+      margin-right: 8px;
+      position: relative;
+      top: -2px;
+    }
+    &:hover{
+      background: var(--color-purple);
+      color: #fff;
+    }
+  }
+}
